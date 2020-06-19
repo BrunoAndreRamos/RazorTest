@@ -1,0 +1,69 @@
+﻿@page "/"
+@page "/test-2"
+@layout MainLayout
+@inherits TestBlazor.Pages.Test2Component
+
+@using Radzen
+@using Radzen.Blazor
+<RadzenContent Container="main">
+  <ChildContent>
+    <RadzenHeading Size="H1" Text="I'm a Blazor Page">
+    </RadzenHeading>
+    <RadzenProgressBar Unit="% I'm a progress Bar">
+    </RadzenProgressBar>
+    <div class="col-md-12">
+      <RadzenTabs>
+        <Tabs>
+          <RadzenTabsItem Selected="true" Text="I'm the first tab">
+            <ChildContent>
+              <RadzenAccordion Multiple="true">
+                <Items>
+                  <RadzenAccordionItem Text="Im An accordion control">
+                  </RadzenAccordionItem>
+                  <RadzenAccordionItem Text="Nice way to divide information">
+                  </RadzenAccordionItem>
+                </Items>
+              </RadzenAccordion>
+              <RadzenFieldset Text="ImaFieldset">
+              </RadzenFieldset>
+              <RadzenCard style="border: 1px solid rgb(33, 37, 41)">
+                <ChildContent>
+                  <RadzenHeading Size="H3" Text="imacard">
+                  </RadzenHeading>
+                </ChildContent>
+              </RadzenCard>
+            </ChildContent>
+          </RadzenTabsItem>
+          <RadzenTabsItem Selected="false" Text="chart">
+            <ChildContent>
+              <RadzenHeading Size="H3" Text="Im a chart">
+              </RadzenHeading>
+              <RadzenChart ColorScheme="ColorScheme.Pastel">
+              </RadzenChart>
+            </ChildContent>
+          </RadzenTabsItem>
+          <RadzenTabsItem Selected="false" Text="several controls">
+            <ChildContent>
+              <div class="row">
+                <div class="col-md-6">
+                  <RadzenTextArea Name="Textarea0">
+                  </RadzenTextArea>
+                </div>
+                <div class="col-md-6">
+                  <RadzenDropDown Name="Dropdown0" TValue="dynamic">
+                  </RadzenDropDown>
+                  <RadzenTree>
+                  </RadzenTree>
+                </div>
+              </div>
+
+
+              <RadzenListBox Name="Listbox0" TValue="dynamic">
+              </RadzenListBox>
+            </ChildContent>
+          </RadzenTabsItem>
+        </Tabs>
+      </RadzenTabs>
+    </div>
+  </ChildContent>
+</RadzenContent>

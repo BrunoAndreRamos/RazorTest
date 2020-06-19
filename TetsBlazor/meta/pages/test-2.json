@@ -1,0 +1,144 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "name": "pageTitle",
+          "size": "H1",
+          "text": "I'm a Blazor Page",
+          "type": "heading"
+        },
+        {
+          "name": "progressbar0",
+          "type": "progressbar",
+          "unit": "% I'm a progress Bar"
+        },
+        {
+          "class": "col-md-12",
+          "components": [
+            {
+              "items": [
+                {
+                  "components": [
+                    {
+                      "items": [
+                        {
+                          "text": "Im An accordion control"
+                        },
+                        {
+                          "text": "Nice way to divide information"
+                        }
+                      ],
+                      "multiple": true,
+                      "name": "accordion0",
+                      "type": "accordion"
+                    },
+                    {
+                      "name": "fieldset0",
+                      "text": "ImaFieldset",
+                      "type": "fieldset"
+                    },
+                    {
+                      "components": [
+                        {
+                          "name": "heading1",
+                          "size": "H3",
+                          "text": "imacard",
+                          "type": "heading"
+                        }
+                      ],
+                      "name": "card0",
+                      "style": {
+                        "border": "1px solid rgb(33, 37, 41)"
+                      },
+                      "type": "card",
+                      "visible": true
+                    }
+                  ],
+                  "selected": true,
+                  "text": "I'm the first tab"
+                },
+                {
+                  "components": [
+                    {
+                      "name": "heading0",
+                      "size": "H3",
+                      "text": "Im a chart",
+                      "type": "heading"
+                    },
+                    {
+                      "colorScheme": "ColorScheme.Pastel",
+                      "name": "chart0",
+                      "type": "chart",
+                      "visible": true
+                    }
+                  ],
+                  "selected": false,
+                  "text": "chart"
+                },
+                {
+                  "components": [
+                    {
+                      "components": [
+                        {
+                          "class": "col-md-6",
+                          "components": [
+                            {
+                              "name": "textarea0",
+                              "type": "textarea",
+                              "value": ""
+                            }
+                          ],
+                          "name": "col1",
+                          "type": "col"
+                        },
+                        {
+                          "class": "col-md-6",
+                          "components": [
+                            {
+                              "name": "dropdown0",
+                              "type": "dropdown"
+                            },
+                            {
+                              "name": "tree0",
+                              "type": "tree"
+                            }
+                          ],
+                          "name": "col2",
+                          "type": "col"
+                        }
+                      ],
+                      "name": "row0",
+                      "type": "row"
+                    },
+                    {
+                      "data": "",
+                      "name": "datalist0",
+                      "type": "datalist"
+                    },
+                    {
+                      "name": "listbox0",
+                      "type": "listbox"
+                    }
+                  ],
+                  "selected": false,
+                  "text": "several controls"
+                }
+              ],
+              "name": "tabs0",
+              "selectedIndex": "",
+              "type": "tabs"
+            }
+          ],
+          "name": "col0",
+          "type": "col"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "layout": "Main",
+  "name": "Test2"
+}
